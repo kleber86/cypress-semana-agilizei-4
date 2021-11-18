@@ -4,9 +4,7 @@
 </div>
 
 <div align="center">
-    <video>
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <img src="video.gif"> 
 </div>
 
 
