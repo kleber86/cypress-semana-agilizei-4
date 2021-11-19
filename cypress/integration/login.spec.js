@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
 describe('Twitter Clone - Login', () => {
-  it('Ao autenticar com credenciais válidas, deve redirecionar ao feed.', ()=>{
 
+  beforeEach(()=>{
     cy.intercept({
       method: 'GET',
       hostname: 'res.cloudinary.com'
@@ -10,13 +10,13 @@ describe('Twitter Clone - Login', () => {
       statusCode: 200,
       fixture: 'download'
     }).as('cloudinary')
+  })
 
-    cy.visit('https://twitter-clone-example.herokuapp.com/')
-
-    cy.get('input[type=email]').type('agilizei086@mail.com')
-    cy.get('input[type=password]').type('Senha@2021')
-    cy.get('button[type=submit]').click()
-
+  it('Ao autenticar com credenciais válidas, deve redirecionar ao feed.', ()=>{
+    cy.login()
+    
+    cy.visit('/')
+    
     cy.get('nav ul li')
       .should('be.visible')
       .and('have.length', 6)

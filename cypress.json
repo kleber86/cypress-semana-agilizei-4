@@ -1,5 +1,9 @@
 {
   "$schema": "http://on.cypress.io/cypress.schema.json",
   "viewportWidth": 1000,
-  "viewportHeight": 660
+  "viewportHeight": 660,
+  "env": {
+    "apiUrl": "https://twitter-clone-example-backend.herokuapp.com"
+  },
+  "baseUrl": "https://twitter-clone-example.herokuapp.com"
 }

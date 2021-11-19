@@ -21,6 +21,9 @@
 - [x] Conhecendo a aplicação
 - [x] Configurações cypress.json
 - [x] Criando nosso primeiro teste
+- [x] Abstrair comandos
+- [x] Pular navegação usando localStorage
+- [x] Documentar comandos customizados 
 
 ### :hammer: Tecnologias
 <ul>
