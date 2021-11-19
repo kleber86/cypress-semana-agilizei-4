@@ -17,6 +17,11 @@
 - [x] Estrutura Inicial
 - [x] Executando comandos Cypress
 
+#### O passo a mais para dominar automação de testes
+- [x] Conhecendo a aplicação
+- [x] Configurações cypress.json
+- [x] Criando nosso primeiro teste
+
 ### :hammer: Tecnologias
 <ul>
     <li>Javascript</li>
